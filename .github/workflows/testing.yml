@@ -19,4 +19,4 @@ jobs:
       - name: Convert deb to IPA
         run: |
            docker create manjarolinux/base
-           docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+           docker run manjarolinux/base
