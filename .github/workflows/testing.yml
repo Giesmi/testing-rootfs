@@ -19,4 +19,4 @@ jobs:
       - name: Convert deb to IPA
         run: |
            docker create manjarolinux/base
-           docker run manjarolinux/base
+           docker export manjarolinux/base --output="latest.tar"
