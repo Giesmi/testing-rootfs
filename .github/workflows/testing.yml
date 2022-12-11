@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build the Docker image
-         run | 
+        run | 
            docker create manjarolinux/base
            docker build . --file Dockerfile --tag my-image-name:$(date +%s)
